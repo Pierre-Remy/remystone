@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Sign in</title>
     <link rel="stylesheet" href="signin.css" />
 </head>
 <body>
-  <div id="container2">
-    <div id=</div>
-      <div id="nav3">
-          <img src="images/undo.png" alt="Menu-icone"  class="menu" href="index.html">
-      
+  <div id="container">
+    
+      <div id="navigation">
+        <a href="index.html"><img src="images/undo.png" alt="This is Undo icon" class="menu" /></a>
+  
           <ul>
-            <li class="signin"><a href="#">Sign in</a></li>
-            <li class="signup"><a href="#">Sign up</a></li>
+            <li><a href="signin.html">Sign in</a></li>
+            <li><a href="signup.html">Sign up</a></li>
         </ul>
       </div>
-      <div id="content3"> 
-          <div id="content4">
-        <p class="title">sing in</div>n</p>
-        <p class="direction">Sign in to continue</p>
-        <input type="email" class="email" placeholder="youremail@gmail.com" />
-        <input type="password" class="password" placeholder="password" />
-        <p class="change">forget passoword</p>
-        <button type="submit" class="button">Continue</button>
+      <div id="content1">
+        <div id="signin"> 
+          <p class="title">sign in</p>
+          <p class="direction">Sign in to continue</p>
+          <p>Your email:<br><input type="email" class="email" placeholder="youremail@gmail.com" required></p>
+          
+          <p>Your password:<br> <input type="password" class="password" placeholder="password" required></p>
+          <p class="change">Forget password</p>
+          <button type="submit" class="button">Continue</button>
+          <p>Don't have account yet? <a href="signup.html">Sign up</a></p>
+        </div>
+
+        <div id="picture">
+          <img src="images/profile.png" alt="Profile picture" class="profi">
+        </div>
+
       </div>
-      <div id="content5">
-        <img src="images/profile.png" alt="Profile picture" class="profi"/>
-      </div>
-      <div id="last">
-          <p>Don't have account yet?<a href="#">Sign up</a></p>
-      </div>
-      <div>
-       <p id="foot">Copyright  @ 2020 All right Reserved.</p>  
+      <div id="foot">
+        <p class="footer">Copyright  @ 2020 All right Reserved.</p>  
       </div>
   </div>
 </body>
