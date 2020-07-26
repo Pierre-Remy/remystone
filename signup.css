@@ -1,0 +1,106 @@
+body {
+    background-size: auto;
+    background-color: rgba(53, 72, 78, 0.75);
+    height: auto;
+    width: auto;
+    }
+
+#container {
+    position: relative;
+    height: 90%;
+    margin: auto;
+    margin-left: 5px;
+    padding: 0px;
+    }
+
+
+#nav {
+    position: fixed;
+    padding-right: 20px;
+}
+.menu {
+    position: absolute;
+    width: 50px;
+    height: 43px;
+    left: 10px;
+    top: 10px;
+    }
+.menu:hover {
+    background-color: #eee4e4;
+    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a5c5e4;
+    }  
+li {
+    float: right;
+    font-size: larger;
+    text-transform: capitalize;
+  }  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #eee4e4;
+    }
+p {
+    font-size: large;
+    }
+
+
+#content1 {
+    font-size: x-large;
+    height: 550px;
+    padding: 20px;
+    margin: 100px;
+    background: #C4C4C4;
+    border-radius: 200px;
+        }
+    
+#signup {
+    float: left;
+    padding: 50px 10px 50px 150px;
+    } 
+.title {
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: x-large;
+    }
+.button {
+    font-size: large;
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+        }
+.button a {
+    color: black;
+    text-decoration: none;
+    }
+
+#picture {
+    float: right;
+    padding: 50px;
+    }
+
+.profi {
+    width: 434px;
+    height: 469px;
+    border: 1px solid #857E7E;
+    border-radius: 109px;
+    }
+
+#foot { 
+    clear: both;
+    color: #3E4549;
+    }
+.footer {
+    font-size: large;
+}
