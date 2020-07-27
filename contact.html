@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
     <link rel="stylesheet" href="contact.css" />
+    <script defer src="contact.js"></script>
 </head>
 <body>
     <div id="container3">
@@ -16,12 +17,35 @@
     <div id="contacts">
         <div id="contact1">
             <p>I had like to hear <img class="image2" src="images/love-icon.png"/>from you.</p><br>
-            <p>Your name:<br> <input type="text" placeholder="Your full name" class="name1" required><br></p>
 
-            <p>Your email:<br></p><input type="text" placeholder="someone@gmail.com" class="email1" required><br>
-            <p>Your comment:<br><input type="text" placeholder="Your message" class="message1"></p><br>
-            <button class="button">Submit here</button>
+            <div id="error">
+
+            </div>
+            <form id="form" onsubmit="return validateForm ()" action="/" method="GET">
+                <fieldset>
+                    <legend>Fill here below:</legend>
+
+                        <label for="name1">name:</label><br>
+                         <input  id="name1" name="name1"type="text" placeholder="Your full name"><br>
+                         <i class="fas fa-check-circle"></i>
+                         <i class="fas fa-eclamation-circle"></i>
+                         <small>Error message</small><br>
+
+                        <label for="email1">Your email:</label><br>
+                        <input id="email1" name="email1"type="text" placeholder="someone@gmail.com">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-eclamation-circle"></i>
+                        <small>Error message</small><br>
+                        
+                        <label for="message">Your message:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="60">Type your message here!</textarea><br>
+
+                        <input type="submit" class="button" value="submit">
+                        <input type="reset" class="reset" value="reset">
+                </fieldset>
+            </form>
         </div>
+    </div>
 
         <div id="mycontact">
             <img src="images/profile.png" alt="My personal profile" class="image4"><br>
