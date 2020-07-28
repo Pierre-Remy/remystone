@@ -18,30 +18,23 @@
         <div id="contact1">
             <p>I had like to hear <img class="image2" src="images/love-icon.png"/>from you.</p><br>
 
-            <div id="error">
-
-            </div>
-            <form id="form" onsubmit="return validateForm ()" action="/" method="GET">
+            <form id="form" onsubmit="return validate ()" action="/" method="GET">
                 <fieldset>
                     <legend>Fill here below:</legend>
 
                         <label for="name1">name:</label><br>
-                         <input  id="name1" name="name1"type="text" placeholder="Your full name"><br>
-                         <i class="fas fa-check-circle"></i>
-                         <i class="fas fa-eclamation-circle"></i>
-                         <small>Error message</small><br>
+                         <input  id="name1" name="name1" type="text" placeholder="Your full name"><br>
+                        
 
                         <label for="email1">Your email:</label><br>
-                        <input id="email1" name="email1"type="text" placeholder="someone@gmail.com">
-                        <i class="fas fa-check-circle"></i>
-                        <i class="fas fa-eclamation-circle"></i>
-                        <small>Error message</small><br>
+                        <input id="email1" name="email1" type="text" placeholder="someone@gmail.com">
+                     
                         
                         <label for="message">Your message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="60">Type your message here!</textarea><br>
+                        <textarea id="message" name="message" rows="5" cols="60"></textarea><br>
 
-                        <input type="submit" class="button" value="submit">
-                        <input type="reset" class="reset" value="reset">
+                        <input type="submit" id="button" value="submit">
+                        <input type="reset" id="reset" value="reset">
                 </fieldset>
             </form>
         </div>
