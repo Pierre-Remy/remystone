@@ -1,23 +1,70 @@
 body {
-    background-size: auto;
-    background-color: rgba(53, 72, 78, 0.75);
-    height: auto;
-    width: auto;
-    }
+    margin: 0px;
+    padding: 0px;
+    background-color: fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(70px, auto);
+    font-family: Muli;
 
-#container3 {
-    position: relative;
-    height: 90%;
-    margin: auto;
-    margin-left: 5px;
-    }
+}
+#header {
+    grid-column: 1 /4;
+    grid-row: 1 / 1;
+    color: white;
+    background-color: #404241;
+    align-items: center;
+}
+.menu {
+    
+position: absolute;
+width: 72px;
+height: 60px;
+left: 22px;
+top: 5px;
+color: white;
+}
+.menu:hover {
+    background-color: white;
+}
 
-#nav {
-        margin: 5px;
-        padding-right: 20px;
-        background-color: #a5c5e4;
-        height: 53px;
-    }
+li {
+    text-decoration: none;
+    display: inline;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+li a:hover {
+text-decoration: underline;
+}
+li a:active {
+    background-color: burlywood;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+#menu {
+    float: left;
+  }
+  
+  .menu {
+      color: white;
+  
+  }
+  #navigation {
+      float: right;
+  }
 h1 {
    text-transform: uppercase;
    font-size: x-large;
@@ -35,6 +82,7 @@ h1 {
 
 #contacts {
         padding: 10px;
+        width: 900px;
     }
 
 /*This is the section for other's contact */
@@ -112,10 +160,10 @@ background-color: whitesmoke;
     float: right;
     }
 p {
-    font-size: x-large;
+    font-size: large;
 }
 .image5 {
-    width: 50px;
+    width: 100px;
     height: 50px;
 }
 .image6 {
@@ -130,11 +178,17 @@ p {
 
 /*This is the footer section */
 
-#for {
-    clear:both;
-    left: 90px;
-    color: #3E4549;
-    }
-.last {
-    font-size: large;
+#footer {
+    clear: both;
+
+}
+.footer {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    left: 495px;
+    top: 750px;
 }

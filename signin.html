@@ -1,43 +1,53 @@
-<html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in</title>
-    <link rel="stylesheet" href="signin.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in page</title>
+  <link rel="stylesheet" href="signin.css">
+  <script src="signin.js"></script>
 </head>
 <body>
-  <div id="container">
-    
+    <div id="header">
+      <div id="menu">
+        <img src="images/navig-icon.png" class="menu">
+      </div>
       <div id="navigation">
-        <a href="index.html"><img src="images/undo.png" alt="This is Undo icon" class="menu" /></a>
-  
-          <ul>
-            <li><a href="signin.html">Sign in</a></li>
-            <li><a href="signup.html">Sign up</a></li>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="/">sign in</a></li>
+          <li><a href="signup.html">sign up</a></li>
+          <li><a href="contact.html">contact</a></li>
+         
         </ul>
       </div>
-      <div id="content1">
-        <div id="signin"> 
-          <p class="title">sign in</p>
-          <p class="direction">Sign in to continue</p>
-          <p>Your email:<br><input type="email" class="email" placeholder="youremail@gmail.com" required></p>
-          
-          <p>Your password:<br> <input type="password" class="password" placeholder="password" required></p>
-          <p class="change">Forget password</p>
-          <button type="submit" class="button">Continue</button>
-          <p>Don't have account yet? <a href="signup.html">Sign up</a></p>
-        </div>
 
-        <div id="picture">
-          <img src="images/profile.png" alt="Profile picture" class="profi">
-        </div>
+    </div>
+      <form name="form" id="form" onsubmit="return signVal ()" action="/" method="GET">
 
-      </div>
-      <div id="foot">
-        <p class="footer">Copyright  @ 2020 All right Reserved.</p>  
-      </div>
-  </div>
+        <p class="title">SIGN IN</p>
+        <p>Sign in to continue</p><br>
+        <input type="text" name="name" placeholder="personal@gmail.com"><hr><br>
+        <p class="forget"><a href="#">forget password?</a></p>
+
+        <input type="password" name="password" placeholder="yourpassword"><hr><br>
+      
+       
+        <button type="submit" value="submit">Continue</button><br>
+
+
+        <p>Don't have account yet? <a href="signup.html">Sign up</a></p>
+
+        
+      </form>
+    
+      
+    </div>
+
+    <div id="footer">
+      <p class="footer">Pierre Remy Copyright (c) 2020 All right reserved</p>
+    </div>
+  
 </body>
-
-</html></html>
+</html>
