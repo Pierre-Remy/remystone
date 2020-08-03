@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="loginadmin.css">
+    <script src="loginadmin.js"></script>
+</head>
+<body>
+    <div>
+    
+        <ul class="header">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="signin.html"class="active">Sign in</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+          
+          <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About</a>
+              <div class="dropdown-content">
+                <a href="#">Pitch</a>
+                <a href="#">Education</a>
+                <a href="#">Personal brand</a>
+              </div>
+            </li>
+        </ul>
+    </div>
+ 
+
+    <h2>Login Form</h2>
+
+    <form>
+        <div class="imgcontainer">
+            <img src="images/login.png" alt="person profile" class="prof">
+        </div>
+
+        <div class="container">
+            <label for="name"><b>Username</b></label>
+            <input type="text" id="name" placeholder="Enter Username">
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter Password">
+            <p id="passwordresult" style="color: red"></p>
+            <br>
+                
+            <button type="submit" onclick="validateLogin ()">Login</button>
+            <label>
+            <br>
+            <input type="checkbox" name="remember"> Remember me
+            </label>
+            <br>
+            <br>
+            <span class="password">Forgot <a href="#">password?</a></span>
+        </form>
+    </div>
+    <div id="footer">
+        <p class="footer">Pierre Remy Copyright (c) 2020 All right reserved</p>
+    </div>
+  
+    
+    
+</body>
+</html>
