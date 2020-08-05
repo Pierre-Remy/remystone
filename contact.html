@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact page</title>
     <link rel="stylesheet" href="contact.css" />
-    <script defer src="contact.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    
+    
 </head>
 <body>
     <div id="header">
@@ -29,27 +32,28 @@
 
     <div id="contacts">
         <div id="contact1">
+            <h1>Contact form</h1>
             <p>I had like to hear <img class="image2" src="images/love-icon.png"/>from you.</p><br>
 
-            <form id="form" onsubmit="return validate ()" action="/" method="GET">
+            <form id="form">
                 <fieldset>
                     <legend>Fill here below:</legend>
 
-                        <label for="name1">name:</label><br>
-                         <input  id="name1" name="name1" type="text" placeholder="Your full name"><br>
+                        <label for="name">name:</label><br>
+                         <input  id="name" type="text" placeholder="Your full name"><br>
                         
 
-                        <label for="email1">Your email:</label><br>
-                        <input id="email1" name="email1" type="text" placeholder="someone@gmail.com">
+                        <label for="email">Your email:</label><br>
+                        <input id="email" type="text" placeholder="someone@gmail.com">
                      
                         
                         <label for="message">Your message:</label><br>
-                        <textarea id="message" name="message" rows="5" cols="60"></textarea><br>
+                        <textarea id="message" rows="5" cols="60"></textarea><br>
 
-                        <input type="submit" id="button" value="submit">
-                        <input type="reset" id="reset" value="reset">
+                        <button id="button">Send</button>
                 </fieldset>
             </form>
+            <div class="alert">Message noted with thanks, we will come to you as soon as possible.</div>
         </div>
     </div>
 
@@ -70,7 +74,6 @@
     <div id="footer">
         <p class="footer">Pierre Remy Copyright (c) 2020 All right reserved</p>
       </div>
-
-           
+      <script src="contact.js"></script>
   </body>
   </html></html>
